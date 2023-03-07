@@ -1,0 +1,113 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.mobile-menu__close {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  fill: var(--black);
+
+  &:hover,
+  :focus {
+    fill: var(--blue);
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.mobile-menu__menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+}
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mobile-menu__nav2 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.mobile-menu__list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__option {
+  margin-left: 0;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mobile-menu__option2 {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.mobile-menu__link {
+  text-decoration: none;
+  color: var(--almost-black);
+
+  &:hover,
+  :focus {
+    color: var(--blue);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.mobile-menu__contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+.mobile-menu__phone {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__mail {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--grey);
+}
+.mobile-menu__socialmedia {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row;
+}
+.mobile-menu__socialmedia--link {
+  text-decoration: none;
+  color: var(--blue);
+}
+.mobile-menu__socialmedia--gap {
+  color: rgba(33, 33, 33, 0.2);
+}

@@ -1,0 +1,44 @@
+.lorem__box {
+  height: 120px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--very-bright-grey);
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 25px;
+}
+.lorem__icon {
+  display: block;
+  margin: auto;
+}
+.lorem__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: flex;
+}
+.lorem {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.lorem__headline4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--almost-black);
+  margin-bottom: 10px;
+}

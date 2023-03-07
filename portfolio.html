@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header section__container">
+        <div class="menu">
+          <a href="index.html" class="menu__logo"
+              ><h3><span>Web</span>Studio</h3></a
+          >
+          <svg class="menu__icon" width="40" height="40"><use xlink: href="images/icons.svg#mobile-menu-open"></use></svg>
+          <nav class="menu__desktop">
+              <ul class="menu__list1">
+                <li class="menu__option">
+                  <a href="index.html" class="menu__link">Agencja</a>
+                </li>
+                <li class="menu__option">
+                  <a href="portfolio.html" class="menu__link menu__link--active">Portfolio</a>
+                </li>
+                <li class="menu__option">
+                  <a href="contact.html" class="menu__link">Kontakt</a>
+                </li>
+              </ul>
+          </nav>
+          <ul class="menu__list2 menu__desktop">
+            <li class="menu__contacts">
+              <svg class="menu__contact-icon" width="16" height="16">
+                <use xlink: href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a href="mailto:info@devstudio.com" class="menu__contact">
+                info@devstudio.com</a
+              >
+              </li>
+            <li class="menu__contacts">
+              <svg class="menu__contact-icon" width="16" height="16">
+                <use xlink: href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a href="tel:+48111111111" class="menu__contact"> +48 111 111 111</a>
+            </li>
+          </ul>
+        </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu d-none">
+        <div class="mobile-menu__menu">
+            <svg class="mobile-menu__close toggle-menu" width="40" height="40"><use xlink: href="images/icons.svg#mobile-menu-close"></use></svg>
+            <div class="mobile-menu__nav">
+              <div>
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__option">
+                    <a href="index.html" class="mobile-menu__link">Agencja</a>
+                  </li>
+                  <li class="mobile-menu__option">
+                    <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+                  </li>
+                  <li class="mobile-menu__option">
+                    <a href="contact.html" class="mobile-menu__link">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile-menu__nav2">
+                  <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__option">
+                      <a href="tel:+48111111111" class="mobile-menu__phone mobile-menu__link">+48 111 111 111</a>
+                    </li>
+                    <li class="mobile-menu__option">
+                      <a href="mailto:info@example.com" class="mobile-menu__mail mobile-menu__link">info@example.com</a>
+                    </li>
+                  </ul>
+                <ul class="mobile-menu__socialmedia">
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Instagram</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Twitter</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Facebook</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- mobile menu ends -->
+
+    </header>
+    <main>
+      <section class="section">
+        <div class="section__container">
+          <ul class="button-list">
+            <li class="button-list__item">
+              <button class="button-list__button">Wszystkie</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__button">Strony</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__button">Aplikacje</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__button">Dizajn</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="portfolio-list">
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio1.jpg"
+                alt="Mockup strony internetowej"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</div>
+              </div>
+              <h5 class="portfolio-list__headline">Technocrack</h5>
+              <p class="portfolio-list__title">Strona internetowa</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio2.jpg"
+                alt="Steph Curry z Golden State Warriors blokuje gracza New Orlean Pelicans"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Grafika New Orlean vs Golden Star</h5>
+              <p class="portfolio-list__title">Dizajn</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio3.jpg"
+                alt="Logo restauracji The Seafood"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Restauracja Seafood</h5>
+              <p class="portfolio-list__title">Aplikacja</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio4.jpg"
+                alt="Czarne słuchawki nauszne"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Projekt Prime</h5>
+              <p class="portfolio-list__title">Marketing</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio5.jpg"
+                alt="Projekt opakowań kartonowych"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Projekt Boxes</h5>
+              <p class="portfolio-list__title">Aplikacja</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio6.jpg"
+                alt="Mockup ciemnej strony internetowej"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Inspiration has no Borders</h5>
+              <p class="portfolio-list__title">Strona internetowa</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio7.jpg"
+                alt="Otworzony magazyn ze zdjęciami i tekstem"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Magazyn Limited Edition</h5>
+              <p class="portfolio-list__title">Dizajn</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio8.jpg"
+                alt="Mockup metki cenowej"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Projekt LAB</h5>
+              <p class="portfolio-list__title">Marketing</p>
+            </li>
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__image"><img
+                src="images/portolio9.jpg"
+                alt="Laptop z otwartą stroną internetową oraz ręce na klawiaturze"
+                width="370"
+                height="294"
+              /><div class="portfolio-list__overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu risus ultricies, faucibus risus vel, aliquam dui. Nulla in risus tempus, tempor felis quis, dignissim nibh. Maecenas tincidunt sed augue elementum placerat</div>
+              </div>
+              <h5 class="portfolio-list__headline">Growing Business</h5>
+              <p class="portfolio-list__title">Aplikacja</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="section section--footer">
+      <div class="footer section__container">
+        <div class="footer__content">
+          <h3 class="footer__logo"><span>Web</span>Studio</h3>
+          <address>
+            <p class="footer__adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <div class="footer__adress"><a href="mailto:info@example.com" class="footer__adress footer__adress--links"
+              >info@example.com</a></div>
+            <div class="footer__adress"><a href="tel:+48111111111" class="footer__adress footer__adress--links">+48 111 111 111</a></div>
+          </address>
+        </div>
+        <div class="footer__content">
+          <p class="footer__title">Dołącz do nas</p>
+          <div class="footer__content--2">
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-instagram"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-twitter"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-facebook"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__content">
+          <p class="footer__title">Zapisz się do newslettera</p>
+          <form name="newsletter--form" class="newsletter">
+            <input type="email" name="email" placeholder="E-mail" class="newsletter__input"/>
+            <button type="submit" class="newsletter__button">
+              Zapisz się
+                <svg class="newsletter__icon" height="24" weight="24">
+                  <use xlink: href="./images/icons.svg#submit-icon">
+                  </use>
+                </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

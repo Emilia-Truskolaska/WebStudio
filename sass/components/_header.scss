@@ -1,0 +1,183 @@
+.header {
+  height: 60px;
+  border-bottom: 1px solid var(--medium-bright-grey);
+  background-color: var(--white);
+  padding: 10px 15px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    padding: 0px 15px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    min-gap: 83px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    min-gap: 0;
+  }
+}
+
+.menu__logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--black);
+
+  & span {
+    color: var(--blue);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.menu__icon {
+  fill: var(--black);
+
+  &:hover,
+  :focus {
+    fill: var(--blue);
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu__link {
+  text-decoration: none;
+  color: var(--almost-black);
+
+  &:hover {
+    color: var(--blue);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.menu__contact {
+  text-decoration: none;
+  color: var(--grey);
+}
+.menu__contacts {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  &:hover .menu__contact-icon,
+  :focus .menu__contact-icon {
+    fill: var(--blue);
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+
+  &:hover .menu__contact,
+  :focus .menu__contact {
+    color: var(--blue);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.menu__list2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.menu__nav {
+  display: flex;
+  align-items: center;
+}
+.menu__list1 {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 1200px) {
+    margin-right: 345px;
+  }
+}
+.menu__option {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 46px;
+  }
+}
+.menu__link--active {
+  color: var(--blue);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background: var(--blue);
+    border-radius: 2px;
+  }
+}
+.menu__contact-icon {
+  margin-right: 10px;
+  fill: var(--grey);
+  &:hover,
+  :focus {
+    fill: var(--blue);
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+  &:hover .menu__contact,
+  :focus .menu__contact {
+    fill: var(--blue);
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+
+.menu__desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

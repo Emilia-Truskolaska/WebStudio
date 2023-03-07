@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 144px;
+    row-gap: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 0;
+  }
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+.footer__content--2 {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+.footer__icon {
+  margin-right: 10px;
+  background-color: var(--very-bright-shadow);
+  border-radius: 50%;
+  fill: #fff;
+
+  &:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.footer__title {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.footer__adress {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 9px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.footer__adress--links {
+  color: var(--medium-shadow);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--blue);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+.footer__logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.footer__logo span {
+  color: var(--blue);
+}

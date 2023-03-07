@@ -1,0 +1,68 @@
+.team {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 450px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--white);
+  box-shadow: 0px 1px 3px var(--shadow5), 0px 1px 1px var(--shadow6),
+    0px 2px 1px var(--shadow2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.team__photo {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.team__title {
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team__socialmedia {
+  display: flex;
+  justify-content: center;
+}
+.team__icon {
+  background-color: var(--white);
+  border-radius: 50%;
+  fill: var(--bright-grey);
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: var(--blue);
+    fill: var(--white);
+    cursor: pointer;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  }
+}
+
+.team__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--almost-black);
+}

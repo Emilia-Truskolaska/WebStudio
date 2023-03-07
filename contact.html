@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header section__container">
+        <div class="menu">
+          <a href="index.html" class="menu__logo"
+              ><h3><span>Web</span>Studio</h3></a
+          >
+          <svg class="menu__icon" width="40" height="40"><use xlink: href="images/icons.svg#mobile-menu-open"></use></svg>
+          <nav class="menu__desktop">
+              <ul class="menu__list1">
+                <li class="menu__option">
+                  <a href="index.html" class="menu__link">Agencja</a>
+                </li>
+                <li class="menu__option">
+                  <a href="portfolio.html" class="menu__link">Portfolio</a>
+                </li>
+                <li class="menu__option">
+                  <a href="contact.html" class="menu__link menu__link--active">Kontakt</a>
+                </li>
+              </ul>
+          </nav>
+          <ul class="menu__list2 menu__desktop">
+            <li class="menu__contacts">
+              <svg class="menu__contact-icon" width="16" height="16">
+                <use xlink: href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a href="mailto:info@devstudio.com" class="menu__contact">
+                info@devstudio.com</a
+              >
+              </li>
+            <li class="menu__contacts">
+              <svg class="menu__contact-icon" width="16" height="16">
+                <use xlink: href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a href="tel:+48111111111" class="menu__contact"> +48 111 111 111</a>
+            </li>
+          </ul>
+        </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu d-none">
+        <div class="mobile-menu__menu">
+            <svg class="mobile-menu__close toggle-menu" width="40" height="40"><use xlink: href="images/icons.svg#mobile-menu-close"></use></svg>
+            <div class="mobile-menu__nav">
+              <div>
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__option">
+                    <a href="index.html" class="mobile-menu__link">Agencja</a>
+                  </li>
+                  <li class="mobile-menu__option">
+                    <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+                  </li>
+                  <li class="mobile-menu__option">
+                    <a href="contact.html" class="mobile-menu__link">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile-menu__nav2">
+                  <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__option">
+                      <a href="tel:+48111111111" class="mobile-menu__phone mobile-menu__link">+48 111 111 111</a>
+                    </li>
+                    <li class="mobile-menu__option">
+                      <a href="mailto:info@example.com" class="mobile-menu__mail mobile-menu__link">info@example.com</a>
+                    </li>
+                  </ul>
+                <ul class="mobile-menu__socialmedia">
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Instagram</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Twitter</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">Facebook</a>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <p class="mobile-menu__socialmedia mobile-menu__socialmedia--gap">|</p>
+                  </li>
+                  <li class="mobile-menu__option2">
+                    <a href="" class="mobile-menu__socialmedia mobile-menu__socialmedia--link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- mobile menu ends -->
+
+    </header>
+    <main>
+      <section class="section">
+        <div class="section__container">
+            <div class="form__container">
+                <form class="form form__contact">
+                <p class="form-title">Napisz do nas!</p>
+                <fieldset class="form__fieldset">
+                    <label for="username" class="form__label">Imię</label>
+                    <div class="form__group"><input type="text" name="username" id="username" class="form__input" required/><svg class="form__icons" width="18" height="18"><use xlink: href="./images/icons.svg#form-name"></use></svg></div>
+                    <label for="phone-number" class="form__label">Telefon</label>
+                    <div class="form__group"><input type="tel" name="phone-number" id="phone-number" class="form__input" required/><svg class="form__icons" width="18" height="18"><use xlink: href="./images/icons.svg#form-phone"></use></svg></div>
+                    <label for="email" class="form__label">Email</label>
+                    <div class="form__group"><input type="email" name="email" id="email" class="form__input" required><svg class="form__icons" width="18" height="18"><use xlink: href="./images/icons.svg#form-email"></use></svg></div>
+                    <label for="comment" class="form__label">Komentarz</label>
+                    <textarea type="text" name="comment" id="comment" class="form__comment" placeholder="Wprowadź tekst"></textarea>
+                    </fieldset>
+                    <label class="form__policy"><input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox"/><span class="form__terms">Oświadczam iż akceptuję <a href="terms_of_use.html" class="form__terms form__terms--link">Regulamin</a> i <a href="privacy_policy.html" class="form__terms form__terms--link">Politykę Prywatności</a>.</span></label>
+                <button type="submit" class="form__submit">Wyślij</button>
+                </form>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section section--footer">
+      <div class="footer section__container">
+        <div class="footer__content">
+          <h3 class="footer__logo"><span>Web</span>Studio</h3>
+          <address>
+            <p class="footer__adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <div class="footer__adress"><a href="mailto:info@example.com" class="footer__adress footer__adress--links"
+              >info@example.com</a></div>
+            <div class="footer__adress"><a href="tel:+48111111111" class="footer__adress footer__adress--links">+48 111 111 111</a></div>
+          </address>
+        </div>
+        <div class="footer__content">
+          <p class="footer__title">Dołącz do nas</p>
+          <div class="footer__content--2">
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-instagram"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-twitter"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-facebook"></use>
+            </svg>
+            <svg class="footer__icon" height="44" width="44">
+              <use xlink: href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__content">
+          <p class="footer__title">Zapisz się do newslettera</p>
+          <form name="newsletter--form" class="newsletter">
+            <input type="email" name="email" placeholder="E-mail" class="newsletter__input"/>
+            <button type="submit" class="newsletter__button">
+              Zapisz się
+                <svg class="newsletter__icon" height="24" weight="24">
+                  <use xlink: href="./images/icons.svg#submit-icon">
+                  </use>
+                </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
